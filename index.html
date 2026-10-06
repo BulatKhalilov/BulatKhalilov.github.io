@@ -12,6 +12,7 @@
   >
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -21,8 +22,17 @@
     }
 
     body {
-  margin: 0;
-  background: #ffffff;
+      margin: 0;
+      background: #ffffff;
+      color: #111111;
+
+      font-family:
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-weight: 400;
     }
 
     a {
@@ -34,41 +44,51 @@
       margin: 0 auto;
     }
 
+
     /* HEADER */
 
     header {
       position: sticky;
       top: 0;
       z-index: 20;
-     background: rgba(255, 255, 255, 0.94);
+
+      background: rgba(255, 255, 255, 0.96);
+
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid #171717;
+      border-bottom: 1px solid #111111;
     }
 
     nav {
       min-height: 64px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 30px;
     }
 
     .logo {
       font-size: 15px;
-      font-weight: 700;
+      font-weight: 500;
+
       text-decoration: none;
       text-transform: uppercase;
+
       letter-spacing: 0.08em;
     }
 
     .nav-links {
       display: flex;
       flex-wrap: wrap;
+
       gap: 24px;
     }
 
     .nav-links a {
       font-size: 14px;
+      font-weight: 400;
+
       text-decoration: none;
     }
 
@@ -78,73 +98,104 @@
       text-underline-offset: 5px;
     }
 
+
     /* HERO */
 
     .hero {
       padding: 90px 0 70px;
-      border-bottom: 1px solid #171717;
+      border-bottom: 1px solid #111111;
     }
 
     .hero-grid {
       display: grid;
+
       grid-template-columns: 1.15fr 0.85fr;
+
       gap: 55px;
+
       align-items: end;
     }
 
     .kicker {
       margin-bottom: 20px;
+
       font-size: 14px;
+      font-weight: 400;
+
       text-transform: uppercase;
       letter-spacing: 0.12em;
     }
 
     h1 {
       margin: 0;
+
       font-size: clamp(62px, 10vw, 138px);
+
       line-height: 0.88;
       letter-spacing: -0.065em;
-      font-weight: 700;
+
+      font-weight: 500;
     }
 
     .hero-intro {
       max-width: 700px;
+
       margin: 40px 0 0;
+
       font-size: clamp(22px, 3vw, 34px);
+
       line-height: 1.22;
       letter-spacing: -0.02em;
+
+      font-weight: 400;
     }
 
     .hero-meta {
-      margin-top: 38px;
       max-width: 600px;
+
+      margin-top: 38px;
+
       font-size: 16px;
       line-height: 1.65;
+
+      font-weight: 400;
     }
+
+
+    /* PHOTO */
 
     .hero-photo img {
       display: block;
+
       width: 100%;
       height: auto;
-      border: 1px solid #171717;
+
+      border: 1px solid #111111;
     }
 
-    /* GENERAL */
+
+    /* GENERAL SECTIONS */
 
     section {
       padding: 80px 0;
-      border-bottom: 1px solid #171717;
+
+      border-bottom: 1px solid #111111;
     }
 
     .section-grid {
       display: grid;
+
       grid-template-columns: 1fr 3fr;
+
       gap: 70px;
     }
 
     .section-title {
       margin: 0;
+
       font-size: 14px;
+      font-weight: 400;
+
       text-transform: uppercase;
       letter-spacing: 0.12em;
     }
@@ -155,8 +206,11 @@
 
     .content p {
       margin: 0 0 24px;
+
       font-size: 20px;
       line-height: 1.58;
+
+      font-weight: 400;
     }
 
     .content p:last-child {
@@ -167,68 +221,101 @@
       text-underline-offset: 4px;
     }
 
+
     /* PAGE CARDS */
 
     .cards {
       display: grid;
+
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+
+      gap: 18px;
     }
 
     .card {
-      padding: 24px;
-      border: 1px solid #171717;
-      text-decoration: none;
       display: block;
+
       min-height: 230px;
-      transition: transform 0.15s ease;
-      background: rgba(255, 255, 255, 0.15);
+
+      padding: 24px;
+
+      background: #ffffff;
+
+      border: 1px solid #111111;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.15s ease,
+        background 0.15s ease;
     }
 
     .card:hover {
       transform: translateY(-3px);
+
+      background: #f7f7f7;
     }
 
     .card-label {
-      margin-bottom: 16px;
-      font-size: 13px;
+      margin-bottom: 18px;
+
+      font-size: 12px;
+      font-weight: 400;
+
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: #555;
+
+      color: #555555;
     }
 
     .card-title {
-      margin: 0 0 14px;
+      margin: 0 0 15px;
+
       font-size: 30px;
       line-height: 1;
+
       letter-spacing: -0.03em;
+
+      font-weight: 500;
     }
 
     .card-text {
       font-size: 16px;
       line-height: 1.5;
-      color: #333;
+
+      font-weight: 400;
+
+      color: #333333;
     }
+
 
     /* CONTACT */
 
     .contact-big {
+      margin-bottom: 34px;
+
       font-size: clamp(38px, 7vw, 86px);
+
       line-height: 0.95;
       letter-spacing: -0.05em;
-      margin-bottom: 34px;
+
+      font-weight: 500;
     }
 
     .contact-links {
       display: flex;
       flex-wrap: wrap;
+
       gap: 16px 28px;
     }
 
     .contact-links a {
       font-size: 18px;
+      font-weight: 400;
+
       text-underline-offset: 5px;
     }
+
 
     /* FOOTER */
 
@@ -239,15 +326,21 @@
     .footer-inner {
       display: flex;
       justify-content: space-between;
+
       gap: 30px;
+
       font-size: 13px;
+      font-weight: 400;
     }
+
 
     /* TABLET */
 
     @media (max-width: 900px) {
+
       .hero-grid {
         grid-template-columns: 1fr;
+
         gap: 35px;
       }
 
@@ -258,11 +351,14 @@
       .cards {
         grid-template-columns: 1fr;
       }
+
     }
+
 
     /* MOBILE */
 
     @media (max-width: 760px) {
+
       .container {
         width: min(100% - 30px, 1180px);
       }
@@ -270,6 +366,7 @@
       nav {
         align-items: flex-start;
         flex-direction: column;
+
         padding: 18px 0;
       }
 
@@ -278,7 +375,7 @@
       }
 
       .hero {
-        padding: 75px 0 55px;
+        padding: 70px 0 55px;
       }
 
       section {
@@ -287,6 +384,7 @@
 
       .section-grid {
         grid-template-columns: 1fr;
+
         gap: 32px;
       }
 
@@ -297,16 +395,22 @@
       .footer-inner {
         flex-direction: column;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
+
 
   <!-- HEADER -->
 
   <header>
+
     <div class="container">
+
       <nav>
 
         <a class="logo" href="index.html">
@@ -314,25 +418,48 @@
         </a>
 
         <div class="nav-links">
-          <a class="active" href="index.html">About</a>
-          <a href="research.html">Research</a>
-          <a href="projects.html">Projects</a>
-          <a href="publications.html">Publications</a>
-          <a href="#contact">Contact</a>
+
+          <a class="active" href="index.html">
+            About
+          </a>
+
+          <a href="research.html">
+            Research
+          </a>
+
+          <a href="projects.html">
+            Projects
+          </a>
+
+          <a href="publications.html">
+            Publications
+          </a>
+
+          <a href="#contact">
+            Contact
+          </a>
+
         </div>
 
       </nav>
+
     </div>
+
   </header>
+
 
 
   <main>
 
+
     <!-- HERO -->
 
     <section class="hero">
+
       <div class="container">
+
         <div class="hero-grid">
+
 
           <div>
 
@@ -340,16 +467,21 @@
               Ethnographer · Researcher · Journalist · Curator
             </div>
 
+
             <h1>
               Bulat<br>
               Khalilov
             </h1>
 
+
             <p class="hero-intro">
+
               I work with traditional and independent music,
               decolonial approaches to culture, and contemporary
               cultural infrastructures.
+
             </p>
+
 
             <div class="hero-meta">
 
@@ -360,88 +492,119 @@
               <br><br>
 
               He is currently a Guest Researcher at the
-              <strong>
-                Institute of Cultural Anthropology / European Ethnology
-                (KAEE), University of Göttingen
-              </strong>.
+              Institute of Cultural Anthropology / European Ethnology
+              (KAEE), University of Göttingen.
 
               <br><br>
 
               His research is supported by the
-              <strong>Right Livelihood Foundation</strong>.
+              Right Livelihood Foundation.
 
             </div>
 
           </div>
 
 
+
           <div class="hero-photo">
+
             <img
               src="2026-10-04%2015.23.55.jpg"
               alt="Portrait of Bulat Khalilov"
             >
+
           </div>
 
+
         </div>
+
       </div>
+
     </section>
+
 
 
     <!-- ABOUT -->
 
     <section>
+
       <div class="container section-grid">
+
 
         <h2 class="section-title">
           About
         </h2>
 
+
         <div class="content">
 
-          <p>
-            My work develops across research, music, journalism
-            and curatorial practice.
-          </p>
 
           <p>
+
+            My work develops across research, music, journalism
+            and curatorial practice.
+
+          </p>
+
+
+          <p>
+
             I am interested in traditional and post-traditional music,
             decoloniality, identity, archives, cultural mediation,
             and the ways in which music circulates through contemporary
             scenes and institutions.
+
           </p>
 
+
           <p>
+
             A central part of my work is
+
             <a
               href="https://oredrecordings.bandcamp.com/"
               target="_blank"
               rel="noopener noreferrer">
               Ored Recordings
             </a>,
+
             an independent label and platform documenting, studying,
             publishing and promoting traditional and local music
             of the North Caucasus.
+
           </p>
 
+
         </div>
+
       </div>
+
     </section>
 
 
-    <!-- PAGES -->
+
+    <!-- EXPLORE -->
 
     <section>
+
       <div class="container section-grid">
+
 
         <h2 class="section-title">
           Explore
         </h2>
 
+
         <div class="content">
 
           <div class="cards">
 
-            <a class="card" href="research.html">
+
+            <!-- RESEARCH -->
+
+            <a
+              class="card"
+              href="research.html">
 
               <div class="card-label">
                 Research
@@ -452,15 +615,22 @@
               </h3>
 
               <div class="card-text">
+
                 Current work on new trajectories of traditional music,
                 decoloniality, mediation and contemporary music
                 infrastructures.
+
               </div>
 
             </a>
 
 
-            <a class="card" href="projects.html">
+
+            <!-- PROJECTS -->
+
+            <a
+              class="card"
+              href="projects.html">
 
               <div class="card-label">
                 Projects
@@ -471,14 +641,21 @@
               </h3>
 
               <div class="card-text">
-                Ored Recordings, Jrpjej, teaching initiatives,
-                community work and research-based cultural projects.
+
+                Ored Recordings, Ored Ensemble, Ulyap Songs,
+                Jrpjej, research and other cultural projects.
+
               </div>
 
             </a>
 
 
-            <a class="card" href="publications.html">
+
+            <!-- PUBLICATIONS -->
+
+            <a
+              class="card"
+              href="publications.html">
 
               <div class="card-label">
                 Publications
@@ -489,77 +666,109 @@
               </h3>
 
               <div class="card-text">
-                Selected essays, interviews and articles published
-                in 3/4, EastEast and The Attic.
+
+                Essays, interviews and articles on music,
+                decoloniality, cultural representation and
+                independent cultural practices.
+
               </div>
 
             </a>
+
 
           </div>
 
         </div>
+
+
       </div>
+
     </section>
+
 
 
     <!-- CONTACT -->
 
     <section id="contact">
+
       <div class="container section-grid">
+
 
         <h2 class="section-title">
           Contact
         </h2>
 
+
         <div class="content">
+
 
           <div class="contact-big">
             Get in touch.
           </div>
 
+
           <div class="contact-links">
+
 
             <a href="mailto:kazbulat.khalilov@uni-goettingen.de">
               kazbulat.khalilov@uni-goettingen.de
             </a>
 
+
             <a href="mailto:oredrecordings@gmail.com">
               oredrecordings@gmail.com
             </a>
+
 
             <a
               href="https://www.uni-goettingen.de/en/697871.html"
               target="_blank"
               rel="noopener noreferrer">
+
               University Profile
+
             </a>
+
 
             <a
               href="https://oredrecordings.bandcamp.com/"
               target="_blank"
               rel="noopener noreferrer">
+
               Ored Recordings
+
             </a>
+
 
             <a
               href="https://www.instagram.com/oredrecordings/"
               target="_blank"
               rel="noopener noreferrer">
+
               Instagram
+
             </a>
+
 
           </div>
 
+
         </div>
+
+
       </div>
+
     </section>
 
+
   </main>
+
 
 
   <!-- FOOTER -->
 
   <footer>
+
     <div class="container footer-inner">
 
       <div>
@@ -571,7 +780,9 @@
       </div>
 
     </div>
+
   </footer>
+
 
 </body>
 </html>
