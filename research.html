@@ -8,10 +8,19 @@
 
   <meta
     name="description"
-    content="Research by Bulat Khalilov on traditional music, decoloniality, cultural infrastructures and the contemporary music landscape."
+    content="Alternative Temporalities: New Trajectories for Traditional Music Today — research by Bulat Khalilov."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&family=Space+Mono:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet"
   >
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -22,9 +31,11 @@
 
     body {
       margin: 0;
-      background: #f1efe8;
-      color: #171717;
-      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111111;
+
+      font-family: "IBM Plex Sans", Arial, sans-serif;
+      font-weight: 400;
     }
 
     a {
@@ -36,42 +47,58 @@
       margin: 0 auto;
     }
 
+
     /* HEADER */
 
     header {
       position: sticky;
       top: 0;
-      z-index: 10;
-      background: rgba(241, 239, 232, 0.94);
+      z-index: 20;
+
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid #171717;
+
+      border-bottom: 1px solid #111111;
     }
 
     nav {
       min-height: 64px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 30px;
     }
 
     .logo {
-      font-size: 15px;
-      font-weight: 700;
+      font-family: "Space Mono", monospace;
+
+      font-size: 14px;
+      font-weight: 400;
+
       text-decoration: none;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+
+      letter-spacing: 0;
     }
 
     .nav-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 24px;
+
+      gap: 22px;
     }
 
     .nav-links a {
-      font-size: 14px;
+      font-family: "Space Mono", monospace;
+
+      font-size: 13px;
+      font-weight: 400;
+
       text-decoration: none;
+
+      letter-spacing: -0.03em;
     }
 
     .nav-links a:hover,
@@ -80,130 +107,233 @@
       text-underline-offset: 5px;
     }
 
-    /* PAGE HEADER */
 
-    .page-header {
-      padding: 110px 0 75px;
-      border-bottom: 1px solid #171717;
+    /* HERO */
+
+    .research-hero {
+      padding: 90px 0 72px;
+
+      border-bottom: 1px solid #111111;
     }
 
     .kicker {
-      margin-bottom: 25px;
-      font-size: 14px;
+      margin-bottom: 24px;
+
+      font-family: "Space Mono", monospace;
+
+      font-size: 13px;
+      font-weight: 400;
+
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+
+      letter-spacing: -0.02em;
     }
 
     h1 {
       max-width: 1050px;
+
       margin: 0;
-      font-size: clamp(64px, 11vw, 145px);
-      line-height: 0.86;
-      letter-spacing: -0.065em;
-      font-weight: 700;
+
+      font-family: "Space Mono", monospace;
+
+      font-size: clamp(45px, 7vw, 92px);
+
+      line-height: 0.98;
+
+      letter-spacing: -0.07em;
+      word-spacing: -0.09em;
+
+      font-weight: 400;
     }
 
-    .page-intro {
-      max-width: 850px;
-      margin-top: 55px;
-      font-size: clamp(22px, 3vw, 34px);
-      line-height: 1.25;
-      letter-spacing: -0.02em;
+    .hero-intro {
+      max-width: 860px;
+
+      margin-top: 48px;
+
+      font-family: "IBM Plex Sans", Arial, sans-serif;
+
+      font-size: clamp(22px, 2.5vw, 30px);
+
+      line-height: 1.24;
+      letter-spacing: -0.025em;
+
+      font-weight: 400;
     }
 
-    /* CONTENT */
 
-    section {
-      padding: 90px 0;
-      border-bottom: 1px solid #171717;
+    /* RESEARCH SECTIONS */
+
+    .research-section {
+      padding: 78px 0;
+
+      border-bottom: 1px solid #111111;
     }
 
     .section-grid {
       display: grid;
+
       grid-template-columns: 1fr 3fr;
+
       gap: 70px;
     }
 
-    .section-title {
+    .section-label {
       margin: 0;
-      font-size: 14px;
+
+      font-family: "Space Mono", monospace;
+
+      font-size: 12px;
+      line-height: 1.4;
+
+      font-weight: 400;
+
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: -0.02em;
     }
 
-    .content {
-      max-width: 820px;
+    .section-content {
+      max-width: 840px;
     }
 
-    .content p {
-      margin: 0 0 28px;
-      font-size: 20px;
-      line-height: 1.58;
+    .section-content p {
+      margin: 0 0 24px;
+
+      font-family: "IBM Plex Sans", Arial, sans-serif;
+
+      font-size: 19px;
+      line-height: 1.55;
+
+      letter-spacing: -0.01em;
+
+      font-weight: 400;
     }
 
-    .content p:last-child {
+    .section-content p:last-child {
       margin-bottom: 0;
     }
 
-    .large-text {
-      font-size: 30px !important;
-      line-height: 1.35 !important;
-      letter-spacing: -0.025em;
+
+    /* BIG QUESTION */
+
+    .question {
+      max-width: 980px;
+
+      margin: 0;
+
+      font-family: "Space Mono", monospace;
+
+      font-size: clamp(29px, 4vw, 52px);
+
+      line-height: 1.08;
+
+      letter-spacing: -0.055em;
+      word-spacing: -0.08em;
+
+      font-weight: 400;
     }
 
-    .research-list {
-      margin-top: 50px;
-      border-top: 1px solid #171717;
-    }
 
-    .research-item {
+    /* INFO GRID */
+
+    .info-grid {
       display: grid;
-      grid-template-columns: 170px 1fr;
-      gap: 35px;
-      padding: 28px 0;
-      border-bottom: 1px solid #999;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+
+      margin-top: 42px;
     }
 
-    .research-label {
-      font-size: 14px;
+    .info-card {
+      min-height: 170px;
+
+      padding: 22px;
+
+      border: 1px solid #111111;
+
+      background: #ffffff;
+    }
+
+    .info-label {
+      margin-bottom: 18px;
+
+      font-family: "Space Mono", monospace;
+
+      font-size: 10px;
+
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+
+      color: #555555;
     }
 
-    .research-text {
-      font-size: 18px;
-      line-height: 1.55;
+    .info-text {
+      font-family: "IBM Plex Sans", Arial, sans-serif;
+
+      font-size: 16px;
+      line-height: 1.45;
     }
 
-    .institution {
-      margin-top: 50px;
-      padding-top: 30px;
-      border-top: 1px solid #777;
+
+    /* OUTPUT */
+
+    .output-text {
+      max-width: 900px;
+
+      font-family: "Space Mono", monospace;
+
+      font-size: clamp(27px, 3.6vw, 46px);
+
+      line-height: 1.08;
+
+      letter-spacing: -0.05em;
+
+      font-weight: 400;
     }
 
-    .institution h3 {
-      margin: 0 0 20px;
-      font-size: 32px;
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-    }
 
     /* FOOTER */
 
     footer {
-      padding: 32px 0 45px;
+      padding: 30px 0 45px;
     }
 
     .footer-inner {
       display: flex;
       justify-content: space-between;
+
       gap: 30px;
-      font-size: 13px;
+
+      font-family: "Space Mono", monospace;
+
+      font-size: 11px;
+      line-height: 1.4;
+
+      letter-spacing: -0.02em;
     }
+
+
+    /* TABLET */
+
+    @media (max-width: 850px) {
+
+      .section-grid {
+        grid-template-columns: 1fr;
+
+        gap: 34px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
 
     /* MOBILE */
 
-    @media (max-width: 760px) {
+    @media (max-width: 650px) {
 
       .container {
         width: min(100% - 30px, 1180px);
@@ -212,6 +342,7 @@
       nav {
         align-items: flex-start;
         flex-direction: column;
+
         padding: 18px 0;
       }
 
@@ -219,43 +350,46 @@
         gap: 12px 18px;
       }
 
-      .page-header {
-        padding: 80px 0 55px;
+      .research-hero {
+        padding: 70px 0 55px;
       }
 
-      section {
-        padding: 65px 0;
+      .research-section {
+        padding: 58px 0;
       }
 
-      .section-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
+      h1 {
+        font-size: clamp(40px, 12vw, 62px);
       }
 
-      .content p {
-        font-size: 18px;
+      .hero-intro {
+        font-size: 21px;
       }
 
-      .large-text {
-        font-size: 24px !important;
-      }
-
-      .research-item {
-        grid-template-columns: 1fr;
-        gap: 10px;
+      .section-content p {
+        font-size: 17px;
+        line-height: 1.52;
       }
 
       .footer-inner {
         flex-direction: column;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
+
+  <!-- HEADER -->
+
   <header>
+
     <div class="container">
+
       <nav>
 
         <a class="logo" href="index.html">
@@ -263,248 +397,351 @@
         </a>
 
         <div class="nav-links">
-          <a href="index.html">About</a>
-          <a class="active" href="research.html">Research</a>
-          <a href="projects.html">Projects</a>
-          <a href="publications.html">Publications</a>
-          <a href="events.html">Events</a>
-          <a href="contact.html">Contact</a>
+
+          <a href="index.html">
+            About
+          </a>
+
+          <a class="active" href="research.html">
+            Research
+          </a>
+
+          <a href="projects.html">
+            Projects
+          </a>
+
+          <a href="publications.html">
+            Publications
+          </a>
+
+          <a href="index.html#contact">
+            Contact
+          </a>
+
         </div>
 
       </nav>
+
     </div>
+
   </header>
+
 
 
   <main>
 
-    <div class="container">
-      <div class="page-header">
+
+    <!-- HERO -->
+
+    <section class="research-hero">
+
+      <div class="container">
 
         <div class="kicker">
-          Research
+          Current Research
         </div>
 
         <h1>
-          Traditional<br>
-          music in<br>
-          transition
+          Alternative Temporalities:<br>
+          New Trajectories for Traditional Music Today
         </h1>
 
-        <div class="page-intro">
-          I study how traditional music moves between communities,
-          independent cultural scenes, institutions and global music
-          infrastructures — and how these movements are shaped by
-          colonial and capitalist hierarchies.
+        <div class="hero-intro">
+          Since the late 2010s, artists who, in one way or another,
+          draw on traditional music in their work have become increasingly
+          prominent in the global scene of pop avant-garde and so-called
+          independent music.
         </div>
 
       </div>
-    </div>
 
-
-    <section>
-      <div class="container section-grid">
-
-        <h2 class="section-title">
-          Current Research
-        </h2>
-
-        <div class="content">
-
-          <p class="large-text">
-            My current research focuses on new trajectories of traditional
-            music and on non-academic methods of working with musical
-            traditions.
-          </p>
-
-          <p>
-            I am interested in what happens when traditional music moves
-            beyond the contexts in which it has conventionally been
-            documented, represented and performed, and enters independent
-            labels, festivals, clubs, media, artistic institutions and
-            contemporary music scenes.
-          </p>
-
-          <p>
-            The project examines the people and infrastructures surrounding
-            this music: musicians, independent labels, curators, festivals,
-            venues, journalists, researchers and audiences.
-          </p>
-
-          <p>
-            Rather than approaching traditional music exclusively as
-            heritage or preservation, I am interested in it as a living
-            cultural practice that participates in contemporary processes
-            of identity formation, migration, political imagination and
-            cultural production.
-          </p>
-
-        </div>
-      </div>
     </section>
 
 
-    <section>
+
+    <!-- THE SHIFT -->
+
+    <section class="research-section">
+
       <div class="container section-grid">
 
-        <h2 class="section-title">
-          Questions
+        <h2 class="section-label">
+          The Shift
         </h2>
 
-        <div class="content">
+        <div class="section-content">
 
-          <div class="research-list">
+          <p>
+            Musicians of the fourth wave of the folk revival in the UK
+            and Ireland, artists from the Global South, masters of oral
+            classical music, and experimenters who are expanding the
+            concept of regional traditions are becoming integrated into
+            the infrastructure of festivals dedicated to experimental,
+            electronic, extreme, or adventurous music.
+          </p>
 
-            <div class="research-item">
-              <div class="research-label">
-                Circulation
+          <p>
+            In this context, these stylistically, regionally, and
+            genre-diverse musical practices form, if not a unified body,
+            then at least a diverse one. Moreover, they are presented
+            there not as a separate, exotic component, but as a
+            full-fledged part of the main program.
+          </p>
+
+          <p>
+            This conceptual shift encompasses not only major festivals
+            but also small venues, community radio stations, independent
+            labels, media outlets, and so on.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- RESEARCH -->
+
+    <section class="research-section">
+
+      <div class="container section-grid">
+
+        <h2 class="section-label">
+          Research
+        </h2>
+
+        <div class="section-content">
+
+          <p>
+            In this study, we aim, first, to describe the shift that is
+            taking place, and second, to critically examine its causes
+            and how it is perceived in European and regional contexts.
+          </p>
+
+          <p>
+            Drawing on numerous interviews, fieldwork, and related studies
+            (both scholarly and journalistic), we examine why, since the
+            early 2010s, the market and cultural communities—which had
+            previously been oriented toward avant-garde and experimental
+            genres— began to take notice of traditional music outside the
+            categories of “world music”; how the interest of Western
+            institutions influences non-Western cultures and the language
+            used to describe local phenomena; and how these genre shifts
+            are directly linked to colonial and capitalist hierarchies.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CENTRAL QUESTION -->
+
+    <section class="research-section">
+
+      <div class="container section-grid">
+
+        <h2 class="section-label">
+          Central Question
+        </h2>
+
+        <div>
+
+          <p class="question">
+            How do the various musical and sonic practices of different
+            communities integrate into modernity, reject its totality,
+            or create alternative temporalities?
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- MATERIAL & METHODS -->
+
+    <section class="research-section">
+
+      <div class="container section-grid">
+
+        <h2 class="section-label">
+          Material<br>
+          & Methods
+        </h2>
+
+        <div class="section-content">
+
+          <p>
+            For this study, we conducted more than 30 in-depth interviews
+            with musicians, representatives of record labels, festivals,
+            and booking agencies, as well as academic researchers,
+            journalists, and archivists from various countries and
+            regions: Ireland, England, Scotland, Germany, Indonesia,
+            the North Caucasus, Pakistan, Poland, and others.
+          </p>
+
+          <p>
+            In addition, our research drew on an analysis of label
+            catalogs, festival programs, and changes in the language
+            used in press releases and other texts.
+          </p>
+
+
+          <div class="info-grid">
+
+            <div class="info-card">
+
+              <div class="info-label">
+                Interviews
               </div>
 
-              <div class="research-text">
-                How does traditional music enter contemporary European
-                and global music markets, festivals, media and cultural
-                institutions?
+              <div class="info-text">
+                More than 30 in-depth interviews with musicians,
+                curators, labels, festivals, booking agents,
+                researchers, journalists and archivists.
               </div>
+
             </div>
 
 
-            <div class="research-item">
-              <div class="research-label">
-                Mediation
+            <div class="info-card">
+
+              <div class="info-label">
+                Geography
               </div>
 
-              <div class="research-text">
-                What roles do labels, curators, journalists, festivals
-                and other intermediaries play in determining how
-                traditional music is heard and understood?
+              <div class="info-text">
+                Ireland, England, Scotland, Germany, Indonesia,
+                the North Caucasus, Pakistan, Poland and other
+                regions.
               </div>
+
             </div>
 
 
-            <div class="research-item">
-              <div class="research-label">
-                Decoloniality
+            <div class="info-card">
+
+              <div class="info-label">
+                Sources
               </div>
 
-              <div class="research-text">
-                How are colonial hierarchies reproduced or challenged
-                through categories such as folk, world music,
-                authenticity, tradition and contemporary music?
-              </div>
-            </div>
-
-
-            <div class="research-item">
-              <div class="research-label">
-                Identity
+              <div class="info-text">
+                Label catalogs, festival programs, press releases,
+                media texts, fieldwork and related academic and
+                journalistic research.
               </div>
 
-              <div class="research-text">
-                How can traditional music contribute to the formation
-                and preservation of identity and to horizontal
-                connections between communities?
-              </div>
-            </div>
-
-
-            <div class="research-item">
-              <div class="research-label">
-                Knowledge
-              </div>
-
-              <div class="research-text">
-                What forms of knowledge are produced outside academia
-                by musicians, labels, archives, communities, journalists
-                and independent cultural practitioners?
-              </div>
             </div>
 
           </div>
 
         </div>
+
       </div>
+
     </section>
 
 
-    <section>
+
+    <!-- THEORETICAL FRAMEWORK -->
+
+    <section class="research-section">
+
       <div class="container section-grid">
 
-        <h2 class="section-title">
-          Göttingen
+        <h2 class="section-label">
+          Theoretical<br>
+          Framework
         </h2>
 
-        <div class="content">
-
-          <div class="institution">
-
-            <h3>
-              Institute of Cultural Anthropology / European Ethnology
-            </h3>
-
-            <p>
-              I am currently a Guest Researcher at the Institute of
-              Cultural Anthropology / European Ethnology (KAEE) at the
-              University of Göttingen.
-            </p>
-
-            <p>
-              My research in Göttingen is supported by the
-              Right Livelihood Foundation.
-            </p>
-
-            <p>
-              The project draws on interviews with musicians, curators,
-              label founders, journalists and cultural practitioners,
-              alongside academic and journalistic literature, artistic
-              works, archival materials and my own experience of working
-              with traditional and independent music.
-            </p>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section>
-      <div class="container section-grid">
-
-        <h2 class="section-title">
-          Background
-        </h2>
-
-        <div class="content">
+        <div class="section-content">
 
           <p>
-            My academic research grows out of more than a decade of
-            practical work with traditional music through Ored Recordings
-            and related cultural projects.
-          </p>
-
-          <p>
-            This position — between research, journalism, music production,
-            curatorial work and independent cultural practice — is central
-            to my approach.
-          </p>
-
-          <p>
-            Over the years, I have participated in activities at SOAS
-            University of London, the University of Vienna, the Higher
-            School of Economics, Ilia State University and the Philharmonic
-            Society of Rouen as a visiting researcher, invited speaker
-            or collaborator.
+            The theoretical framework for the research was drawn from
+            the ideas and works of Steven Feld, Budhaditya Chattopadhyay,
+            Mark Fisher, Thomas Burkhalter, Kerstin Klenke,
+            Dipesh Chakrabarty, and other ethnomusicologists,
+            anthropologists, decolonial thinkers, and even music
+            journalists.
           </p>
 
         </div>
+
       </div>
+
     </section>
+
+
+
+    <!-- DISCIPLINARY FIELD -->
+
+    <section class="research-section">
+
+      <div class="container section-grid">
+
+        <h2 class="section-label">
+          Disciplinary<br>
+          Field
+        </h2>
+
+        <div class="section-content">
+
+          <p>
+            Disciplinarily, the research falls within the fields of
+            ethnomusicology, social anthropology, and pop music studies,
+            and addresses issues of power dynamics in culture, a critical
+            approach to the concept of cultural heritage, identity politics,
+            and (anti)colonial nationalism.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- OUTPUT -->
+
+    <section class="research-section">
+
+      <div class="container section-grid">
+
+        <h2 class="section-label">
+          Planned<br>
+          Outcome
+        </h2>
+
+        <div class="output-text">
+          The planned outcome of the research is a monograph and a series
+          of conferences and concerts that combine theoretical and
+          practical elements.
+        </div>
+
+      </div>
+
+    </section>
+
 
   </main>
 
 
+
+  <!-- FOOTER -->
+
   <footer>
+
     <div class="container footer-inner">
+
       <div>
         © 2026 Bulat Khalilov
       </div>
@@ -512,8 +749,11 @@
       <div>
         Göttingen, Germany
       </div>
+
     </div>
+
   </footer>
+
 
 </body>
 </html>
